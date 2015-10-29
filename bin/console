@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+Dir.glob(
+  File.expand_path('../../**.rb', __FILE__)
+).each { |f| require f }
+
+require 'irb'
+require 'irb/completion'
+
+IRB.start
